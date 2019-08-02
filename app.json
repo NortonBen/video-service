@@ -1,0 +1,28 @@
+{
+    "apps" : [{
+      "name"        : "worker-video",
+      "script"      : "server.js",
+      "watch"       : false,
+      "interpreter_args": "",
+      "env": {
+        "NODE_ENV": "development",
+        "HOST":"127.0.0.1",
+        "PORT": 9800,
+        "APP_URL": "http://localhost:9800",
+        "CACHE_VIEWS": false,
+        "APP_KEY": "ZJ0b013YdsgSFQQ1wuVgb21QfNpl6IIz",
+        "DB_CONNECTION": "sqlite",
+        "DB_HOST": "127.0.0.1",
+        "DB_PORT": "3306",
+        "DB_USER": "root",
+        "DB_PASSWORD": "",
+        "DB_DATABASE": "adonis",
+        "SESSION_DRIVER": "cookie"
+      },
+      "env_production" : {
+         "NODE_ENV": "production"
+      },
+      "instances"  : "max",
+      "exec_mode"  : "cluster"
+    }]
+  }
